@@ -1,155 +1,343 @@
 <body style="background-color: black; color: white; font-family: Arial, Helvetica, sans-serif;">
 
-<h1>
-    MODULE 1
-</h1>
+    <h1>
+        MODULE 1
+    </h1>
 
-<p>
-    <b>Programming language:</b> a bridge that facilitates communication between computers and people
-</p>
-<p>
-    The computer knows the selected programming language if it's archived on the computer RAM or on a disk in Binary
-    code
-<ul>
-    <li>RAM: Random access memory</li>
-    <li>Binary: a series of zeros and ones</li>
-</ul>
-</p>
-
-<p>
-<ul>
-    <li>Low level language: no nedd for interpretation by the computer</li>
-    <li>High level language: needs to be interpreted, converted to bynary code so it can work</li>
-</ul>
-</p>
-
-<p>JavaScript is used to build interactivity into web pages</p>
-<p>Through the years other alternatives have been created
-<ul>
-    <li>VBScript</li>
-    <li>TypeScript</li>
-</ul>
-</p>
-
-<h2>Why use JavaScript?</h2>
-<ul>
-    <li>Ease-of-use compared to other languages</li>
-    <li>Built-in-tools on the web browser (Inspect feature)</li>
-    <li>Used widely</li>
+    <p>
+        <b>Programming language:</b> a bridge that facilitates communication between computers and people
+    </p>
+    <p>
+        The computer knows the selected programming language if it's archived on the computer RAM or on a disk in Binary
+        code
     <ul>
-        <li>Plain JavaScript (aka Vanilla JavaScript)</li>
-        <li>JavaSript Frameworks (React, Vue, D3)</li>
-        <li>Servers (Node.js, Deno)</li>
+        <li>RAM: Random access memory</li>
+        <li>Binary: a series of zeros and ones</li>
     </ul>
-    <li>Acessible language for learning</li>
-    <li>Wide community</li>
-</ul>
+    </p>
 
-<p>Jquery library woul help code in JavaScript using it's features that would work with all browsers, and considered a
-    great solution to incompatibility</p>
-<p>But the way people code kept evolving, bringing more problems and solutions such as React, helping creating, updating
-    and maintaning complex websites</p>
-<p>Many attempted the same: Knockout, Backbone, Angular, Ember, Vue, Alpine, etc</p>
+    <p>
+    <ul>
+        <li>Low level language: no nedd for interpretation by the computer</li>
+        <li>High level language: needs to be interpreted, converted to bynary code so it can work</li>
+    </ul>
+    </p>
 
-<p>Legacy code: websites that still use old code from old libraries</p>
+    <p>JavaScript is used to build interactivity into web pages</p>
+    <p>Through the years other alternatives have been created
+    <ul>
+        <li>VBScript</li>
+        <li>TypeScript</li>
+    </ul>
+    </p>
 
-<h2>Variables</h2>
+    <h2>Why use JavaScript?</h2>
+    <ul>
+        <li>Ease-of-use compared to other languages</li>
+        <li>Built-in-tools on the web browser (Inspect feature)</li>
+        <li>Used widely</li>
+        <ul>
+            <li>Plain JavaScript (aka Vanilla JavaScript)</li>
+            <li>JavaSript Frameworks (React, Vue, D3)</li>
+            <li>Servers (Node.js, Deno)</li>
+        </ul>
+        <li>Acessible language for learning</li>
+        <li>Wide community</li>
+    </ul>
 
-<p>[var] is used to set a valeu that is going to be reused trhough the code. When setting it I'm declaring a fact, which means a variable declaration was made</p>
-<p>Setting a variable isn't enough, because it's value is still undefined. To set it use the assignment operator (=)</p>
-<p>Example: var person = "John"</p>
-<p style="color:lightskyblue">The use of (;) everytime at the end of a code line is best practice or required?</p>
+    <p>Jquery library woul help code in JavaScript using it's features that would work with all browsers, and considered
+        a
+        great solution to incompatibility</p>
+    <p>But the way people code kept evolving, bringing more problems and solutions such as React, helping creating,
+        updating
+        and maintaning complex websites</p>
+    <p>Many attempted the same: Knockout, Backbone, Angular, Ember, Vue, Alpine, etc</p>
 
-<h2>Data types</h2>
+    <p>Legacy code: websites that still use old code from old libraries</p>
 
-<p><b>String</b> = text value</p>
-<p>Ilimited combination of characters, must be used with single or double quotes ("",'')</p>
-<p><b>Number</b> = numerical value</p>
-<p>It has a wide range of possibilities, but it's limited by JavaScript calculation capabilities</p>
-<p><b>Boolean</b> = true or false</p>
-<p>Useful for making decisions</p>
-<p><b>Null</b> = abscense of value</p>
-<p><b>Undefined</b> = a variable not yet assigned a value</p>
-<p><b>BigInt</b> = numerical value</p>
-<p>Acomodates a much greater range of numbers than the [number] data type</p>
-<p><b>Symbol</b> = unique identifier</p>
-<p>Identify and individualizes elements with the same "value" like a serial number </p>
+    <h2>Variables</h2>
 
-<h2>Operators</h2>
+    <p>[var] is used to set a valeu that is going to be reused trhough the code. When setting it I'm declaring a fact,
+        which means a variable declaration was made</p>
+    <p>Setting a variable isn't enough, because it's value is still undefined. To set it use the assignment operator (=)
+    </p>
+    <p>Example: var person = "John"</p>
+    <p style="color:lightgreen">The use of semicolon (;) everytime at the end of a code line is best practice or
+        required?</p>
 
-<table>
-    <tr>
-        <th>Type</th>
-        <th>Operator</th>
-        <th>Meaning</th>
-        <th>Example</th>
-    </tr>
-    <tr>
-        <td>Math</td>
-        <td>+</td>
-        <td>Addition</td>
-        <td>2 + 3</td>
-    </tr>
-    <tr>
-        <td>Math</td>
-        <td>-</td>
-        <td>Subtraction</td>
-        <td>2 - 3</td>
-    </tr>
-    <tr>
-        <td>Math</td>
-        <td>/</td>
-        <td>Divide</td>
-        <td>10/5</td>
-    </tr>
-    <tr>
-        <td>Math</td>
-        <td>*</td>
-        <td>Multiple</td>
-        <td>2 * 3</td>
-    </tr>
-    <tr>
-        <td>Comparison</td>
-        <td> > </td>
-        <td>Greater than</td>
-        <td>3 > 2</td>
-    </tr>
-    <tr>
-        <td>Comparison</td>
-        <td> < </td>
-        <td>Less than</td>
-        <td>2 < 3</td>
-    </tr>
-    <tr>
-        <td>Comparison</td>
-        <td> == </td>
-        <td>Equal to</td>
-        <td> 5 == 5</td>
-    </tr>
-    <tr>
-        <td>Comparison</td>
-        <td> != </td>
-        <td>Not equal to</td>
-        <td>2 != 3</td>
-    </tr>
-    <tr>
-        <td>Logical</td>
-        <td> && (and) </td>
-        <td>Checks for both conditions to be true</td>
-        <td> a>5 && a<10 </td>
-    </tr>
-    <tr>
-        <td>Logical</td>
-        <td> || (or) </td>
-        <td>Checks for at least one condition to be true</td>
-        <td> a>5 || a<10 </td>
-    </tr>
-    <tr>
-        <td>Logical</td>
-        <td> ! (not) </td>
-        <td>Returns false if the result is true</td>
-        <td> !(a>5) </td>
-    </tr>
-</table>
+    <h2>Data types</h2>
+
+    <p><b>String</b> = text value</p>
+    <p>Ilimited combination of characters, must be used with single or double quotes ("",'')</p>
+    <p><b>Number</b> = numerical value</p>
+    <p>It has a wide range of possibilities, but it's limited by JavaScript calculation capabilities</p>
+    <p><b>Boolean</b> = true or false</p>
+    <p>Useful for making decisions</p>
+    <p><b>Null</b> = abscense of value</p>
+    <p><b>Undefined</b> = a variable not yet assigned a value</p>
+    <p><b>BigInt</b> = numerical value</p>
+    <p>Acomodates a much greater range of numbers than the [number] data type</p>
+    <p><b>Symbol</b> = unique identifier</p>
+    <p>Identify and individualizes elements with the same "value" like a serial number </p>
+
+    <h2>Operators</h2>
+
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Operator</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>+</td>
+            <td>Addition</td>
+            <td>2 + 3</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>-</td>
+            <td>Subtraction</td>
+            <td>2 - 3</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>/</td>
+            <td>Divide</td>
+            <td>10/5</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>*</td>
+            <td>Multiple</td>
+            <td>2 * 3</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>**</td>
+            <td>Exponential</td>
+            <td>10**2 = 10*10 = 100</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>%</td>
+            <td>Remainder or modulus operator</td>
+            <!--Checks how many times you can fit one number into the other and then return the remainder-->
+            <td>2 * 3</td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> > </td>
+            <td>Greater than</td>
+            <td>3 > 2</td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> < </td>
+            <td>Less than</td>
+            <td>2 < 3</td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> == </td>
+            <td>Equal to</td> <!--Checks only for value-->
+            <td> 5 == 5 or 5 == "5"</td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> === </td>
+            <td>Strict equality</td> <!--Checks for value and datatype-->
+            <td> 5 === 5 </td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> != </td>
+            <td>Not equal to</td>
+            <td>2 != 3</td>
+        </tr>
+        <tr>
+            <td>Comparison</td>
+            <td> !== </td>
+            <td>Strict inequality</td>
+            <td>2 !== 3</td>
+        </tr>
+        <tr>
+            <td>Logical</td>
+            <td> && (and) </td>
+            <td>Checks for both conditions to be true</td>
+            <td> a>5 && a<10 </td>
+        </tr>
+        <tr>
+            <td>Logical</td>
+            <td> || (or) </td>
+            <td>Checks for at least one condition to be true</td>
+            <td> a>5 || a<10 </td>
+        </tr>
+        <tr>
+            <td>Logical</td>
+            <td> ! (not) </td>
+            <td>Returns false if the result is true</td>
+            <td> !(a>5) </td>
+        </tr>
+    </table>
+
+    <p>The comparison operators greater than (>) and less than (<) can also be used with the equal context (=)</p>
+    <p>Example:</p>
+    <p>His age must be equal or greater than 18 [age >= 18]</p>
+    <p>His age must be equal or less than 18 [age <= 18]</p>
+
+
+    <h2>Strings</h2>
+
+    <p> It's a collection of characters enclosed in single or double quotes</p>
+    <p> ('') or ("") is known as an empty string</p>
+
+    <h2>Booleans</h2>
+
+    <p>Checks if a statment is true or false, which are the only two possible values as "maybe" doesn't exist in this
+        case</p>
+    <p> && = AND
+        <br>
+        console.log(true && true) will output: true
+        <br>
+        console.log(true && false) will output: false
+        <br>
+        console.log(false && true) will output: false
+        <br>
+        console.log(false && false) will output: false
+    </p>
+    <p> || = OR
+        <br>
+        console.log(true || true) will output: true
+        <br>
+        console.log(true || false) will output: true
+        <br>
+        console.log(false || true) will output: true
+        <br>
+        console.log(false || false) will output: false
+    </p>
+    <p> ! = NOT
+        <br>
+        console.log(true || true) will output: true
+        <br>
+        console.log(true || false) will output: true
+        <br>
+        console.log(false || true) will output: true
+        <br>
+        console.log(false || false) will output: false
+    </p>
+    <p>Concatenation operator uses the same symbol as Addition operator (+), but the concatenation is when it's used
+        with strings</p>
+    <p>
+        Example: [console.log (365 + "days")]
+        <br>
+        In this case the JS convertes the number value into a string value so that it can run the (+) operator
+        <br>
+        This process is called "coercion"
+        <br>
+        Sometimes it can show an unexpected result
+        <br>
+        Example: [console.log (1 + "2")]
+        <br>
+        If this happens, the number value will be transformed into a string value and the result will be "12" and not
+        the addition operation
+    </p>
+    <p>
+        += as Addition assignment operator
+        <br>
+        It's used when one wants to accumulate the values stored in a variable
+    </p>
+    <p>
+        Operator precedence and associativity
+        <br>
+        Precedence considers the math logic of operations where, the multiplication and division are calculated first
+        than addition and Subtraction
+        <br>
+        Associativity determines how the precedence works when the code uses operators with the same precedence
+        <br>
+        Example: [5 > 4 > 3]
+        <br>
+        The [5 > 4] is evaluated first (to `true`), then true > 3 is evaluated to `false`, because the `true` value is
+        coerced to `1`
+    </p>
+
+    <h2>Statements</h2>
+    
+    <p>The <b>if statement</b> checks a condition and will execute a code block if the condition is met or true</p>
+    <p>Generally, if else is better suited if there is a binary choice in the condition</p>
+    <p>Operators usually used are == , > , < ,!= </p>
+    <p>The <b>if-esle statement</b> handles both outcomes of the conditional reques </p>
+    <p>It's possible to test multiple conditions usign a additional block for an <b>else-if statement</b> </p>
+    
+    <h2>Switch statements</h2>
+    
+    <p>if there are a lot of possible outcomes, it is best practice to use a <b>switch statement</b> because it is easier to read</p>
+    
+    <h2>Looping</h2>
+
+    <p>Used for repeatedly execute a block of code until a certain condition is satisfied</p>
+    <p>Incrementer or loop counter, represented by the letter "i" in programming, without it the loop doesn't when to start or end, which is a infinite loop</p>
+    
+    <p>Types of loops</p>
+    <p>For: loop a block of code a certain number of times </p>
+    <p>Set the value: [var i = 0]</p>
+    <p>Specify the condition: [i < 3] (the end-count value)</p>
+    <p>Increment the counter: [i++] (increase or decrease) </p>
+
+    <p>While: loop a block of code a certain number of times too</p>
+    <p>Set the value: [var i = 0] before the loop</p>
+    <p>Specify the condition: [(i < 3)] is set outside of the loop (the end-count value), and if the information is true, it will run the loop</p>
+    <p>Increment the counter: [i=i+1] (increase or decrease) is set inside the loop's body</p>
+    <p>The [i++] means the same as [i=i+1]</p>
+    
+    <p>Nested: process more than one data at the same time</p>
+    <p>In this cases exists the outer loops and the inner loops</p>
+    <p>Be careful with the use of loops, as multiple levels of nested loops will slow the code</p>
+
+    <h2 style="text-decoration: underline dotted;">Additional resources</h2>
+
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators">Mozilla Developer Network
+        Expressions and Operators</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_precedence">Mozilla
+        Developer Network Operator Precedence and Associativity</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Glossary/Primitive">JavaScript Primitive Values</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener" href="https://tc39.es/ecma262/">ECMA262
+        Specification</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener" href="https://jquery.com/">jQuery Official
+        Website</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener" href="https://react.dev/">React Official
+        Website</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://survey.stackoverflow.co/2021#technology-most-popular-technologies">StackOverflow Developer Survey
+        2021 Most Popular Technologies</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://unicode.org/emoji/charts/full-emoji-list.html#1f600">Emojis</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://www.javascripttutorial.net/javascript-comparison-operators/">JavaScript Comparison Operators</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Glossary/Truthy">Truthy</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Glossary/Falsy">Falsy</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Conditionals">Making decisions in your code — conditionals</a>
+    <br>
+    <a style="color: lightskyblue;" target="_blank" rel="noreferrer noopener"
+        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator">Conditional (ternary) operator</a>
+
 
 </body>
