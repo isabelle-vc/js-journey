@@ -4,8 +4,118 @@
         MODULE 2
     </h1>
 
-    <p>text here</p>
+    <h2>Functions</h2>
+    
+    <p>A functions is used for repeat a set of actions with or without parameters</p>
+    <p>Without parameters = function example() </p>
+    <p>With parameters = function example(a, b, c, d) </p>
+    <p>There isn't a limit for how many parameters a fuction can have</p>
+    
+    <h2>Arrays</h2>
+    <p>To buid one, the Array Literal Syntax can be used. This means a open square bracket [] to identify the collection of items as a group</p>
+    <p>Example: var example1 ["example1", "example2", "example3"]</p>
+    <p>The items placement inside the array, are numbered automatically starting at 0, this is also called the value's index</p>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Index</th>
+        </tr>
+        <tr>
+            <td>example 1</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>example 2</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>example 3</td>
+            <td>2</td>
+        </tr>
+    </table>
+    <p>This values can be accessed with their index number. It can be log when using console.log(`index: ${i}`)</p>
+    <p>When a parameter is used, JS doesn't require that the data type be specified, it will use whatever was given if valid to the function</p>
+    
+    
+    <h2>Objects</h2>
+    
+    <p>You can have a group of data that are related in some way and instead of using a variable for which one, an object can host all of them</p>
+    <p>Objects can be described as collections of related properties, where which property is represented as a key value pair</p>
+    <p>To indicate a object curly brace {} is used on a variable, also known as the object literal syntax</p>
+    <table>
+        <tr>
+            <th>Example</th>
+            <th>in Variable</th>
+            <th>in Object</th>
+        </tr>
+        <tr>
+            <td>rice pack</td>
+            <td>variable name</td>
+            <td>property key</td>
+        </tr>
+        <tr>
+            <td>1 Kg</td>
+            <td>variable value</td>
+            <td>property value</td>
+        </tr>
+    </table>
+    <p>The dot notation an be used on the property's of the variable </p>
+    <p>Or it can be comma delimited</p>
+    <p>
+        Example dot notation:
+        <br>
+        var storeManager = {}
+        <br>
+        storeManager.age = 45;
+        storeManager.weight = 90;
+    </p>
+    <p>
+        Example comma delimited:
+        <br>
+        var assistantManager = {
+            age: 45,
+            weight: 90,
+            experience: 1
+        }
+        <br>
+        storeManager.age = 45;
+        storeManager.weight = 90;
+    </p>
+    <p>
+        Example brackets notation:
+        <br>
+        var assistantManager = {
+            age: 45,
+            weight: 90,
+            experience: 1
+        }
+        <br>
+        storeManager.age = 45;
+        storeManager.weight = 90;
+    </p>
+    <p>The brackets allow to</p>
+    <ul>
+        <li>Use space on the propety keys</li>
+        <ul>
+            <li>apartment["number of rooms"] = 3;</li>
+        </ul>
+        <li>Use numbers (as the string data type) as property keys [not recommended]</li>
+        <ul>
+            <li>car["2021"] = 20000;</li>
+        </ul>
+        <li>Evaluate expressions</li>
+    </ul>
+    <p>Example: apartment["number of rooms"] = 3;</p>
 
+    
+    <p>New properties can be added to the previous ones. To do that dot notation or brackets notation can be used</p>
+    <p>The same way it can be used to update a already existing property</p>
+    <p>storeManager.nextAchievement = "open a new store"</p>
+    <p>assistantManager.nextAchievement = "got promoted"</p>
+    <p style="color:lightgreen">Can I add a new property inside the object instead of in the middle of the code using dot notation?</p>
+    <p style="color:lightgreen">When a console.log a object the curly brace appears in the output, it's normal? [Exercise 4]</p>
+   
+    
     <h2 style="text-decoration: underline dotted;">Additional resources</h2>
     <p style="color:lightgreen">questions/doubts</p>
 

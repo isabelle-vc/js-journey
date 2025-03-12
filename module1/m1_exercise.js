@@ -6,6 +6,13 @@ in JS */
 
 // Exercise 1__________________________________ //
 
+function showTime() {
+    console.log(`⏱️ Now it's ${new Date().toLocaleString()}`)
+}
+
+showTime()
+
+
 console.log("📌📌📌 Exercise 1 📌📌📌")
 
 console.log("%cExercise 1.1", "color: green; font-size: 24px; font-style: italic;");
@@ -357,7 +364,7 @@ console.log("📌📌📌 Exercise 10 📌📌📌")
 
 // Multiplication table for 2
 
-for (var o = 2; o > 1 && o < 3; o++) {
+for (var o = 2; o > 1 && o < 4; o++) {
     for (var t = 0; t <= 10; t++) {
         console.log(o, "x", t, "=", o * t)
     }
@@ -396,6 +403,25 @@ for (var i = 0; i < cubes.length; i++) {
 }
 
 /*
+var cubes = "ABCDEFG"
+traduzir: string A B C D E F G
+           index 0 1 2 3 4 5 6 
+cubes.length = 7
+who is the last index? 6 or cubes.length - 1
+*/
+
+var cubes = 'ABCDEFGHIJKLM21';
+//styling console output using CSS with a %c format specifier
+for (var i = cubes.length - 1 ; i >= 0; i--) {  // decrescent way,from end to start
+    var styles = "font-size: 40px; border-radius: 10px; border: 1px solid blue; background: pink; color: purple";
+    console.log(`index: ${i}`)
+    console.log("%c" + cubes[i], styles)
+}
+console.log(i)
+console.log(styles)
+
+
+/*
 The cubes[i] targets each individual letter in the loop, based on the current value of the i variable.
 In other words, cubes[i], when i is equal to 0, is: A.
 Then, cubes[i], when i is equal to 1, is: B.
@@ -403,6 +429,8 @@ Then, cubes[i], when i is equal to 1, is: B.
 This goes on for as many loops my for loop runs - and this is determined by the cubes.length value.
 The cubes.length returns a number, in this case 9
 Since cubes is a string of characters the cubes.length gives me the length of the string saved in the variable.
+
+index = length - 1
 */
 
 // Exercise 12__________________________________ // 
@@ -424,7 +452,7 @@ for (var i = 1; i > 0 && i <= 10; i++){
 }
 
 
-console.log("condition switch with for loop")
+console.log("condition 'switch' with for loop")
 
 for (var i = 1; i > 0 && i <= 10; i++) {
     switch (i) {
@@ -441,3 +469,9 @@ for (var i = 1; i > 0 && i <= 10; i++) {
             console.log(i);
     }
 }
+
+for (var i = 0; i < 1000000000; i++){
+
+}
+
+showTime()
