@@ -136,51 +136,58 @@ i = 3 -> (user[loginData[3]]) -> (user[passwordCharacters])
 If the 
 */
 
+console.log("📌📌📌 Exercise 5 📌📌📌")
+
+var calendar = ["number", "day", "month", "year"]
+
+console.log(calendar)
+
+calendar.push("weekend day")
+calendar.push("week number")
+
+console.log(calendar)
+
+calendar.pop()
+
+console.log(calendar)
+
+function passTime(a, b, c){
+    var list = []
+    list.push(a)
+    list.push(b)
+    list.push(c)
+    return list
+}
+
+var time = passTime ("hour", "minute", "seconds")
+console.log (time)
+
 // SUS caculator --------------------------------------------------
 
 
 // 10 questões com 10 respostas entre 1 e 5
-// Se a respota for 1, 3 ou 5 -> x - 1
-// Se a resposta for 2 ou 4 -> 5 - x
+// Se a resposta for ímpar -> x - 1
+// Se a resposta for par -> 5 - x
 // A soma dos valores finais deve ser multiplicado por 2.5
 
-// var q1 = 1
-// var q2 = 5
-// var q3 = 1
-// var q4 = 3
-// var q5 = 1
-// var q6 = 4
-// var q7 = 1
-// var q8 = 1
-// var q9 = 1
-// var q10 = 1
 
-// function calculateOdd (x, y=1){
-//     return x-y
-// }
+var answers = [1, 5, 3, 1, 4, 3, 2, 2, 5, 1]
+var result = 0
 
-// function calculateEven (z=5, w){
-//     return z-y
-// }
-
-// if (? == 1 || ? == 3 || ? == 5){
-//     calculateOdd;
-// } else {
-//     calculateEven;
-// }
-
-// function result (q1, q2, q3, q4, q5, q6, q7, q8, q9, q10){
-//     var total = 2.5*(q1 + q2 + q3 + q4 + q5 + q6 + q7 + q8 + q9 + q10)
-//     return total
-// }
-
-
-// Lista de Respostas
-// Para cada item da lista
-//      se for par:
-//          5 - valor
-//      se for impar:
-//          valor - 1
-// somar todos os valores * 2.5
-
-// como saber se o número é par ou impar? "mod"
+if (answers.length == 10) {
+    for (i=0; i<answers.length; i++){
+        if ((i+1) % 2 !== 0){
+            result += answers[i] - 1
+        } else {
+            result += 5 - answers[i]
+        }
+        console.log("index " + i)
+        console.log(result)
+    }
+    result = result*2.5
+    if (result >= 68){
+        console.log(result + " Good")
+    } else {
+        console.log(result + " Bad")
+    }
+}

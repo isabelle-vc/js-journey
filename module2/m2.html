@@ -59,7 +59,7 @@
             <td>property value</td>
         </tr>
     </table>
-    <p>The dot notation an be used on the property's of the variable </p>
+    <p>The dot notation can be used on the property's of the variable </p>
     <p>Or it can be comma delimited</p>
     <p>
         Example dot notation:
@@ -67,31 +67,32 @@
         var storeManager = {}
         <br>
         storeManager.age = 45;
+        <br>
         storeManager.weight = 90;
     </p>
     <p>
         Example comma delimited:
         <br>
         var assistantManager = {
+            <br>
             age: 45,
+            <br>
             weight: 90,
+            <br>
             experience: 1
+            <br>
         }
-        <br>
-        storeManager.age = 45;
-        storeManager.weight = 90;
     </p>
     <p>
         Example brackets notation:
         <br>
-        var assistantManager = {
-            age: 45,
-            weight: 90,
-            experience: 1
-        }
-        <br>
-        storeManager.age = 45;
-        storeManager.weight = 90;
+        var assistantManager = {}
+            <br>
+            assistantManager["age"] = 45;
+            <br>
+            assistantManager["weight"] = 90;
+            <br>
+            assistantManager["experience"] = 1;
     </p>
     <p>The brackets allow to</p>
     <ul>
@@ -109,12 +110,26 @@
 
     
     <p>New properties can be added to the previous ones. To do that dot notation or brackets notation can be used</p>
-    <p>The same way it can be used to update a already existing property</p>
+    <p>The same way it can be used to update an already existing property</p>
     <p>storeManager.nextAchievement = "open a new store"</p>
     <p>assistantManager.nextAchievement = "got promoted"</p>
     <p style="color:lightgreen">Can I add a new property inside the object instead of in the middle of the code using dot notation?</p>
     <p style="color:lightgreen">When a console.log a object the curly brace appears in the output, it's normal? [Exercise 4]</p>
-   
+    
+    <h2>Arrays are Objects</h2>
+    <p>Arrays also have some built-in properties and methods</p>
+    <p>push() : to add new items to an array</p>
+    <p>pop() : to remove the last item from an array</p>
+    <p>
+        var fruits = []
+        <br>
+        fruits.push("apple")
+        <br>
+        fruits.pop()
+    </p>
+    <p>pop() : to remove the last item from an array</p>
+    
+
     
     <h2 style="text-decoration: underline dotted;">Additional resources</h2>
     <p style="color:lightgreen">questions/doubts</p>
