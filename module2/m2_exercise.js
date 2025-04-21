@@ -133,7 +133,6 @@ i = 0 -> (user[loginData[0]]) -> (user[name])
 i = 1 -> (user[loginData[1]]) -> (user[email])
 i = 2 -> (user[loginData[2]]) -> (user[birthday]) -> undefined because the property doesn't exist
 i = 3 -> (user[loginData[3]]) -> (user[passwordCharacters])
-If the 
 */
 
 console.log("📌📌📌 Exercise 5 📌📌📌")
@@ -191,3 +190,39 @@ if (answers.length == 10) {
         console.log(result + " Bad")
     }
 }
+
+// Math Random
+
+var decimal = Math.random()
+
+console.log(decimal)
+// To make it a number bigger than 1, multiple the result by 10
+console.log(decimal * 10)
+
+// Ceil Method
+
+var rounded = Math.ceil(0.89)
+console.log(rounded)
+
+// Random and Ceil combined
+
+var decimalNumber = Math.random() * 10
+var roundedNumber = Math.ceil(decimalNumber)
+console.log(roundedNumber)
+
+// Concat
+
+var greet = "Hello "
+var names = "Monamona"
+var lastName = "Lisa"
+
+console.log(greet + names)
+console.log(greet.concat(names, lastName))
+
+console.log("Hello".concat("mona").concat("li"))
+
+console.log(names.indexOf("a"))
+console.log(names.lastIndexOf("a"))
+console.log(names.split("o"))
+console.log(lastName.toUpperCase())
+console.log(lastName.toLowerCase())
