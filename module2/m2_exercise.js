@@ -161,6 +161,8 @@ function passTime(a, b, c){
 var time = passTime ("hour", "minute", "seconds")
 console.log (time)
 
+
+console.log("🧮 SUS Calculator")
 // SUS caculator --------------------------------------------------
 
 
@@ -190,6 +192,8 @@ if (answers.length == 10) {
         console.log(result + " Bad")
     }
 }
+
+console.log("📌📌📌 Exercise 6 📌📌📌")
 
 // Math Random
 
@@ -226,3 +230,81 @@ console.log(names.lastIndexOf("a"))
 console.log(names.split("o"))
 console.log(lastName.toUpperCase())
 console.log(lastName.toLowerCase())
+
+console.log("📌📌📌 Exercise 7 📌📌📌")
+// Exercise: Creating arrays and objects
+
+var clothes = []
+console.log(clothes)
+
+clothes.push("t-shirt", "pants", "hoodies", "coat", "dress")
+console.log(clothes)
+
+clothes.pop()
+console.log(clothes)
+
+clothes.push("snickers")
+console.log(clothes)
+console.log(clothes[2])
+
+var favCar = {}
+    favCar["color"] = "red";
+
+favCar["convertible"] = false;
+favCar["brand"] = "Maserati";
+favCar["model"] = "Quattroporte";
+favCar["year"] = "2025";
+console.log(favCar);
+
+var carDealer = ["convertible", "brand", "year", "model"];
+
+carDealer[0] = "color"  // Accessing and modifying array item
+
+for (i=0; i<carDealer.length; i++){
+    console.log(favCar[carDealer[i]])
+}
+
+favCar["loan shark"] = function(){              // This is called an Object Method, because the function is a property of the object
+    console.log("Car purchased: successful ✅")
+}
+favCar["gas station"] = function(){
+    console.log("Tank status: full")
+}
+
+console.log(favCar)
+favCar["loan shark"]()
+favCar["gas station"]()
+
+console.log("📌📌📌 Exercise 8 📌📌📌")
+// TypeOf
+
+// var type = typeof("bye")
+// var type = typeof(7)
+// var type = typeof(5 > 10)
+// var type = typeof(["one", "2", 3])  // Arrays are objects in JS
+var type = typeof(function abc(){console.log("def"); })
+
+console.log(type)
+
+
+console.log("📌📌📌 Exercise 9 📌📌📌") // Developer Mozilla site "Arrays"
+
+
+const random = ["tree", 795, [5, 10, 25]];  // An array inside an array is called a multidimensional array
+
+console.log(random[2][1])   // To access an item inside an array that is itself inside another array, chain two sets of square brackets together
+random.unshift("true")
+console.log(random)   // To access an item inside an array that is itself inside another array, chain two sets of square brackets together
+
+const cities = ["Manchester", "Liverpool"];
+const removedCity = cities.pop();
+console.log(removedCity); // "Liverpool"
+
+const city = ["Manchester", "Liverpool", "Edinburgh", "Carlisle"];
+const index = city.indexOf("Liverpool");
+if (index !== -1) {
+  city.splice(index, 2); // the first argument says where to start removing items
+}                       // and the second argument says how many items should be removed.
+
+console.log(city); // [ "Manchester", "Carlisle" ]
+
