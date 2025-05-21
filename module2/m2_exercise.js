@@ -290,7 +290,18 @@ console.log(type)
 console.log("📌📌📌 Exercise 9 📌📌📌") // Developer Mozilla site "Arrays"
 
 
-const random = ["tree", 795, [5, "10", [25, "f"]]];  // An array inside an array is called a multidimensional array
+const random = [
+    "tree", 
+    795, 
+    [
+        5, 
+        "10", 
+        [
+            25, 
+            "f"
+        ]
+    ]
+];  // An array inside an array is called a multidimensional array
 
 console.log(random[2][1][0])   // To access an item inside an array that is itself inside another array, chain two sets of square brackets together
 random.unshift("true")
